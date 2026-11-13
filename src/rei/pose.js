@@ -66,9 +66,9 @@ export const GRIP = [[18, 22, 18], [38, 52, 30], [40, 55, 32], [42, 55, 32], [45
 export const DRINK = { grab: 1.15, lifted: 2.35, sipEnd: 4.6, down: 5.85, dur: 7.5 };
 
 // expressions -> the model's own shape keys, for VRMs exported without expression binds
+// (relaxed is left unbound on purpose: no smile)
 export const FACE_BINDS = {
   blink: [['目閉じ', 1]],
-  relaxed: [['微笑み', 0.35]],
   aa: [['あ', 1]],
 };
 export const MOUTH_SHAPE = 'あ';    // the shape key that shows where her mouth is
