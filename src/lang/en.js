@@ -1,12 +1,12 @@
 // English
 export default {
   page: {
-    title: 'Night Work — Rei',
+    title: 'Late-Night Coding — Rei',
     view: 'Rei at a CRT terminal in her room at night',
   },
 
   boot: {
-    title: 'Night Work',
+    title: 'Late-Night Coding',
     sub: 'Rei and a terminal after midnight',
     loading: 'Loading…',
     building: 'Setting up the room…',

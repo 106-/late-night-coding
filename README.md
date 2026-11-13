@@ -1,8 +1,10 @@
-# rei-workspace
+# late-night-coding
 
-深夜の部屋でもくもくと3Dアバターがコードを打ち込んでいきます。
+https://106-.github.io/late-night-coding/
 
-![夜の作業](docs/screenshot.png)
+深夜のくらい部屋で3Dアバターがもくもくとコードを打ち込んでいきます。
+
+![よふかしコーディング](docs/screenshot.png)
 
 ```
 npm install

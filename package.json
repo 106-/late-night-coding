@@ -1,6 +1,6 @@
 {
-  "name": "rei-workspace",
-  "description": "夜の作業 / Night Work: Rei types at a CRT in a room baked in Blender",
+  "name": "late-night-coding",
+  "description": "よふかしコーディング / Late-Night Coding: Rei types at a CRT in a room baked in Blender",
   "private": true,
   "type": "module",
   "engines": {

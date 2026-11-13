@@ -125,8 +125,8 @@ html, body {
   transition: opacity 1.2s ease;
 }
 #boot.gone { opacity: 0; pointer-events: none; }
-#boot .inner { text-align: center; width: min(420px, 80vw); }
-#boot h1 { margin: 0; font-size: clamp(26px, 4vw, 44px); letter-spacing: 0.6em; text-indent: 0.6em; font-weight: 500; }
+#boot .inner { text-align: center; width: min(560px, 88vw); }
+#boot h1 { margin: 0; font-size: clamp(18px, 6vw, 40px); letter-spacing: 0.3em; text-indent: 0.3em; white-space: nowrap; font-weight: 500; }
 #boot .sub { margin: 14px 0 34px; color: var(--dim); letter-spacing: 0.22em; font-size: 13px; }
 #boot .bar { height: 2px; background: rgba(255, 255, 255, 0.08); overflow: hidden; border-radius: 2px; }
 #boot .bar i { display: block; height: 100%; width: 0%; background: var(--phos); box-shadow: 0 0 12px var(--phos); transition: width 0.2s; }

@@ -109,6 +109,6 @@ http.createServer((req, res) => {
     if (!res.headersSent) sendJson(res, err.status || 500, { ok: false, detail: err.message });
   });
 }).listen(port, '127.0.0.1', () => {
-  console.log(`Night Work / 夜の作業: ${url}`);
+  console.log(`Late-Night Coding / よふかしコーディング: ${url}`);
   if (args.includes('--open')) openBrowser(url);
 });

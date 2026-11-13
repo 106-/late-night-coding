@@ -1,4 +1,4 @@
-// 夜の作業 / Night Work: Rei, a VRM character, types at a CRT in a path-traced room.
+// よふかしコーディング / Late-Night Coding: Rei, a VRM character, types at a CRT in a path-traced room.
 // The room is a set of pictures baked in Blender with depth, so Rei, the CRT
 // image, the can and the dust can sit inside it in real time.
 import * as THREE from 'three';

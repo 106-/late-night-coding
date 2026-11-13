@@ -1,12 +1,12 @@
 // 日本語
 export default {
   page: {
-    title: '夜の作業 — Rei',
+    title: 'よふかしコーディング — Rei',
     view: '夜の部屋でCRT端末に向かうRei',
   },
 
   boot: {
-    title: '夜の作業',
+    title: 'よふかしコーディング',
     sub: 'Rei と深夜のターミナル',
     loading: '読み込み中…',
     building: '部屋を組み立て中…',
