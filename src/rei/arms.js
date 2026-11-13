@@ -142,21 +142,32 @@ export const armMethods = {
     if (arm.grip !== undefined) this.canFrame(arm);
 
     // fingers
+    if (arm.grip === undefined) arm.thumbSol = null;
+    // round the can: the thumb goes round the far side, as far as the hand has closed
+    const thumb = arm.grip > 0 ? this.thumbGrip(arm) : null;
     arm.fingers.forEach((f, i) => {
       f.press = damp(f.press, 0, 13, dt);
-      let relax, close = 0;
+      let relax, close = [0, 0, 0];
       if (arm.grip !== undefined) {
-        // round the can: each finger closes until it touches it, never into it
-        const grip = this.fingerGrip(arm, i, arm.grip);
-        relax = Math.min(0, grip); close = Math.max(0, grip);
+        // round the can: each finger wraps it joint by joint, never into it
+        relax = Math.min(0, arm.grip);
+        if (i > 0) {
+          const gs = this.fingerGrip(arm, i, arm.grip);
+          close = gs.map(v => Math.max(0, v));
+          relax = Math.min(relax, gs[0]);   // the hand is so close the finger has to open to clear the can
+        }
       } else relax = g * -0.6;   // an open hand in gestures
       const mine = arm.keyTarget && i === arm.keyFinger;
       f.ext = damp(f.ext, mine ? ext : 0, 30, dt);
       f.lift = damp(f.lift, arm.keyTarget && !mine && i !== 0 ? 1 : 0, 26, dt);
       f.yaw = damp(f.yaw, mine ? reachYaw : 0, 30, dt);
       const lift = (f.lift - (i > 0 ? knuckle * Math.max(0, f.ext) : 0)) * (1 - g);
+      // fingers fanned for typing, side by side round the can
+      const yaw = f.yaw * arm.yawSign * (1 - g) - (i > 0 && arm.grip > 0 ? arm.sgn * rad((i - 2.2) * 5) * Math.min(1, arm.grip / this.gripCurl) : 0);
       for (let seg = 0; seg < 3; seg++) {
-        this.fingerQuat(arm, i, seg, f.press + relax * 1.6 + s.sl * 0.5, f.nodes[seg].quaternion, f.ext, lift, f.yaw * arm.yawSign * (1 - g), close);
+        const q = f.nodes[seg].quaternion;
+        this.fingerQuat(arm, i, seg, f.press + relax * 1.6 + s.sl * 0.5, q, f.ext, lift, yaw, close[seg]);
+        if (i === 0 && thumb) q.slerp(this.thumbRot(arm, thumb, seg, _q), clamp(arm.grip / this.gripCurl, 0, 1));
       }
     });
   },

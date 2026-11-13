@@ -8,20 +8,20 @@ import { DRINK } from './pose.js';
 
 const V = () => new THREE.Vector3();
 const Q = () => new THREE.Quaternion();
-const Y = new THREE.Vector3(0, 1, 0);
+const X = new THREE.Vector3(1, 0, 0), Y = new THREE.Vector3(0, 1, 0), Z = new THREE.Vector3(0, 0, 1);
 const rad = THREE.MathUtils.degToRad;
-const _q = Q(), _v = V(), _m = new THREE.Matrix4(), _m2 = new THREE.Matrix4();
+const _q = Q(), _q2 = Q(), _v = V(), _m = new THREE.Matrix4(), _m2 = new THREE.Matrix4();
 const _wq = Q(), _ws = Q(), _wp = V(), _wj = V(), _wm = V(), _wt = V();   // finger walks
 
 const curve = points => new THREE.CatmullRomCurve3(points, false, 'centripetal');
 
 export const drinkMethods = {
   initGrip() {
-    // knuckle line (palm side) off the can's surface (m); knuckles past the can's nearest point
-    // along the fingers, so the palm lies on it; how far the fingers close (each stops where it
-    // meets the can); finger half-thickness kept off the can
-    this.gripGap = 0.03; this.gripWrap = 0.01; this.gripCurl = 1.2; this.fingerR = 0.0085;
-    this.gripRoll = -0.6;      // hand rolled about the fingers (rad) so the thumb's root clears the can
+    // knuckle line off the can's surface (m); knuckles moved along the fingers from the can's
+    // nearest point (- = back towards the wrist, so the bones start on it and wrap round); how far
+    // the fingers close (each stops where it meets the can); finger half-thickness kept off the can
+    this.gripGap = 0.004; this.gripWrap = -0.01; this.gripCurl = 1; this.fingerR = 0.0085;
+    this.gripRoll = 0;         // hand rolled about the fingers (rad; - lifts the index side off the can)
     this.gripOutside = 0.7;    // 0 = palm pushes the way she reaches (hand on the inside), 1 = straight inwards
     // route to the can: over its top by this much (m), then down its outer side from this far out
     this.reachOver = 0.09; this.reachOut = 0.05;
@@ -175,21 +175,26 @@ export const drinkMethods = {
   },
 
   // points down finger i (joints, the halfway points between them, the tip) in hand space, with
-  // the hand closed by g (< 0 opens it); the last point visited is the fingertip
-  walkFinger(arm, i, g, visit) {
+  // the hand closed by g (< 0 opens it; a number, or one value per joint); the last point visited
+  // is the fingertip.  `rot(s, out)` instead of g gives the joint rotations directly.
+  walkFinger(arm, i, g, visit, rot) {
     const f = arm.fingers[i];
     const q = _wq.identity(), p = _wp.set(0, 0, 0), j = _wj;
     for (let s = 0; s < 3; s++) {
       j.copy(f.nodes[s].position).applyQuaternion(q).add(p);
-      if (s > 0) visit(_wm.copy(p).lerp(j, 0.5));
-      visit(j);
+      if (s > 0) visit(_wm.copy(p).lerp(j, 0.5), s);
+      visit(j, s);
       p.copy(j);
-      this.fingerQuat(arm, i, s, Math.min(0, g) * 1.6, _ws, 0, 0, 0, Math.max(0, g));
+      if (rot) rot(s, _ws);
+      else {
+        const gs = typeof g === 'number' ? g : g[s];
+        this.fingerQuat(arm, i, s, Math.min(0, gs) * 1.6, _ws, 0, 0, 0, Math.max(0, gs));
+      }
       q.multiply(_ws);
     }
     j.copy(f.tipExt).applyQuaternion(q).add(p);
-    visit(_wm.copy(p).lerp(j, 0.5));
-    visit(j);
+    visit(_wm.copy(p).lerp(j, 0.5), 3);
+    visit(j, 4);
   },
 
   // hand space -> the can's own space (base centre, axis up) for this frame
@@ -201,27 +206,116 @@ export const drinkMethods = {
     arm.toCan = (arm.toCan || new THREE.Matrix4()).copy(_m).invert().multiply(arm.hand.matrixWorld);
   },
 
-  // how close finger i comes to the can's side (m; < 0 inside it) with the hand closed by g
-  fingerGap(arm, i, g) {
+  // how close finger i comes to the can's side (m; < 0 inside it) with the hand closed by g; with
+  // `seg`, only that bone of it (0 = from the knuckle to the next joint, 2 = the last, to the tip)
+  fingerGap(arm, i, g, seg = -1) {
     const can = arm.gripCan, M = arm.toCan;
     let min = Infinity;
-    this.walkFinger(arm, i, g, p => {
+    this.walkFinger(arm, i, g, (p, k) => {
+      if (k === 0 || (seg >= 0 && Math.min(k, 3) !== seg + 1)) return;   // the knuckle itself doesn't move with the bend
       _wt.copy(p).applyMatrix4(M);
       if (_wt.y > -0.01 && _wt.y < can.h + 0.005) min = Math.min(min, Math.hypot(_wt.x, _wt.z) - can.r);
     });
     return min;
   },
 
-  // the most finger i may close towards `target` and still stay on the can's surface
+  // finger i closing round the can towards `target`, the way a hand closes on something: all its
+  // free joints bend together until one of its bones meets the can; the joints up to that bone stay
+  // there and the ones beyond carry on, so the finger wraps round the can instead of stopping stiff
+  // on its tip, and never goes into it.  Returns one value per joint.
   fingerGrip(arm, i, target) {
+    const g = [target, target, target];
+    if (!arm.toCan || target <= 0) return g;
     const clear = this.fingerR;
-    if (!arm.toCan || this.fingerGap(arm, i, target) >= clear) return target;
-    let lo = -0.6, hi = target;
-    if (hi <= lo || this.fingerGap(arm, i, lo) < clear) return Math.min(lo, target);
-    for (let k = 0; k < 7; k++) {
-      const m = (lo + hi) / 2;
-      if (this.fingerGap(arm, i, m) >= clear) lo = m; else hi = m;
+    const set = (from, v) => { for (let s = from; s < 3; s++) g[s] = v; };
+    let from = 0, start = 0;
+    set(0, 0);
+    if (this.fingerGap(arm, i, g) < clear) {
+      // touching even at rest: open the knuckle until it clears
+      let lo = -0.6, hi = 0;
+      for (let k = 0; k < 7; k++) { g[0] = (lo + hi) / 2; if (this.fingerGap(arm, i, g) >= clear) lo = g[0]; else hi = g[0]; }
+      g[0] = lo; from = 1;
     }
-    return lo;
+    while (from < 3) {
+      set(from, target);
+      if (this.fingerGap(arm, i, g) >= clear) return g;     // closes all the way without touching
+      let lo = start, hi = target;
+      for (let k = 0; k < 7; k++) { set(from, (lo + hi) / 2); if (this.fingerGap(arm, i, g) >= clear) lo = g[from]; else hi = g[from]; }
+      set(from, lo);
+      // the bone that touched holds its joint and the ones before it
+      let touch = from, min = Infinity;
+      for (let s = from; s < 3; s++) { const d = this.fingerGap(arm, i, g, s); if (d < min) { min = d; touch = s; } }
+      from = touch + 1; start = lo;
+    }
+    return g;
+  },
+
+  // --- the thumb round the other side ---------------------------------------------------------
+
+  // A thumb pose for the grip: [a0, b, c, a1, a2] — the root swung across the palm (a0), tipped
+  // down under it (b) and turned about its length (c), then the two outer joints bent (a1, a2).
+  thumbRot(arm, pose, s, out) {
+    const sg = -arm.sgn;
+    if (s > 0) return out.setFromAxisAngle(Y, sg * pose[s + 2]);
+    out.setFromAxisAngle(Y, sg * pose[0]).multiply(_q.setFromAxisAngle(Z, sg * pose[1])).multiply(_q2.setFromAxisAngle(X, sg * pose[2]));
+    return out;
+  },
+
+  // how badly a thumb pose holds the can (lower is better): no part inside it, the pad and tip on
+  // its surface, round the side away from the fingers, at about the index finger's height
+  thumbCost(arm, pose, ref) {
+    const can = arm.gripCan, M = arm.toCan, clear = this.fingerR * 1000;
+    let cost = 0, tipD = 0, tipA = 0, tipY = 0, ipD = 0;
+    this.walkFinger(arm, 0, 0, (p, s) => {
+      if (s === 0) return;                                 // its root, inside the palm
+      _wt.copy(p).applyMatrix4(M);
+      const d = (Math.hypot(_wt.x, _wt.z) - can.r) * 1000;
+      if (_wt.y > -0.01 && _wt.y < can.h + 0.005 && d < clear) cost += 60 * (clear - d) ** 2;
+      if (s === 2) ipD = d;
+      if (s === 4) { tipD = d; tipY = _wt.y * 1000; tipA = Math.atan2(_wt.z, _wt.x); }
+    }, (s, out) => this.thumbRot(arm, pose, s, out));
+    let a = (tipA - ref.palmA) * ref.wrap * 180 / Math.PI;   // + = the way the fingers go round
+    a = ((a + 540) % 360) - 180;
+    cost += 2 * (tipD - clear) ** 2 + 0.6 * (ipD - clear) ** 2;
+    cost += 0.05 * (a + 80) ** 2;
+    cost += 0.02 * (tipY - ref.y) ** 2;
+    cost += 4 * (pose[1] ** 2 + pose[2] ** 2 + pose[3] ** 2 + pose[4] ** 2);
+    return cost;
+  },
+
+  // the thumb's grip pose for this frame: searched coarsely once per grip, then nudged each frame
+  // as the hand and can move
+  thumbGrip(arm) {
+    const M = arm.toCan;
+    // where the palm and the fingers are round the can, and the index finger's height
+    const at = p => _wt.copy(p).applyMatrix4(M);
+    const palm = at(V().copy(arm.fingers[2].nodes[0].position).multiplyScalar(0.6));
+    const palmA = Math.atan2(palm.z, palm.x);
+    let tip = null;
+    this.walkFinger(arm, 2, 1, p => { tip = at(p).clone(); });
+    const wrap = Math.sin(Math.atan2(tip.z, tip.x) - palmA) >= 0 ? 1 : -1;
+    const ref = { palmA, wrap, y: at(arm.fingers[1].nodes[0].position).y * 1000 + 8 };
+    const cost = p => this.thumbCost(arm, p, ref);
+    let best = arm.thumbSol, bestC = best ? cost(best) : Infinity;
+    if (!best) {
+      const R = [[-0.4, 1.2, 7], [0, 1.4, 7], [-1, 1, 7], [0, 1.1, 4], [0, 1.1, 4]];
+      const vals = R.map(([lo, hi, n]) => Array.from({ length: n }, (_, k) => lo + (hi - lo) * k / (n - 1)));
+      const p = [0, 0, 0, 0, 0];
+      for (const a0 of vals[0]) for (const b of vals[1]) for (const c of vals[2]) for (const a1 of vals[3]) for (const a2 of vals[4]) {
+        p[0] = a0; p[1] = b; p[2] = c; p[3] = a1; p[4] = a2;
+        const v = cost(p);
+        if (v < bestC) { bestC = v; best = p.slice(); }
+      }
+    }
+    // coordinate descent: a few passes, finer each time (fewer once it has settled)
+    for (const step of arm.thumbSol ? [0.03, 0.01] : [0.12, 0.06, 0.03, 0.015, 0.008]) {
+      for (let k = 0; k < 5; k++) for (const dv of [step, -step]) {
+        best[k] += dv;
+        const v = cost(best);
+        if (v < bestC) bestC = v; else best[k] -= dv;
+      }
+    }
+    arm.thumbSol = best;
+    return best;
   },
 };

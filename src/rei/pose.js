@@ -58,8 +58,9 @@ export const SEGMENTS = [
 ];
 // extra bend per joint (deg), thumb..little, for a finger pressing a key
 export const PRESS = [[10, 14, 6], [15, 5, 3], [15, 5, 3], [15, 5, 3], [15, 5, 3]];
-// extra bend per joint (deg) for a hand closed round a can
-export const GRIP = [[18, 22, 18], [38, 52, 30], [40, 55, 32], [42, 55, 32], [45, 55, 30]];
+// the most each joint bends (deg, on top of its rest curl) for a hand closed round a can; each
+// stops earlier where the finger meets the can.  The thumb's grip is searched (see drink.js).
+export const GRIP = [[18, 22, 18], [70, 90, 60], [72, 92, 60], [74, 92, 60], [76, 90, 55]];
 
 // drinking from the can (seconds into the gesture): hand on the can, can at her lips, sip over,
 // can back on the desk, hand back on the keys
