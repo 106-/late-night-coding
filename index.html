@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>夜の作業 — Rei</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./src/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./node_modules/three/build/three.module.js",
+    "three/addons/": "./node_modules/three/examples/jsm/",
+    "@pixiv/three-vrm": "./node_modules/@pixiv/three-vrm/lib/three-vrm.module.min.js"
+  }
+}
+</script>
+</head>
+<body>
+<canvas id="view" data-i18n-label="page.view"></canvas>
+
+<nav id="controls" class="hud">
+  <button id="btn-auto" type="button" aria-pressed="false" data-i18n="hud.auto" data-i18n-title="hud.autoTitle"></button>
+  <button id="btn-cam" type="button" aria-pressed="false" hidden data-i18n="hud.cam" data-i18n-title="hud.camTitle"></button>
+  <button id="btn-tune" type="button" aria-pressed="false" hidden data-i18n="hud.tune" data-i18n-title="hud.tuneTitle"></button>
+  <button id="btn-sound" type="button" aria-pressed="true" data-i18n="hud.soundOn" data-i18n-title="hud.soundTitle"></button>
+  <button id="btn-lang" type="button" data-i18n="hud.lang" data-i18n-title="hud.langTitle"></button>
+  <button id="btn-help" type="button" data-i18n="hud.help" data-i18n-title="hud.helpTitle"></button>
+  <button id="btn-full" type="button" data-i18n="hud.full" data-i18n-title="hud.fullTitle"></button>
+</nav>
+
+<div id="hint" class="hud" hidden></div>
+
+<section id="term" class="hud" data-i18n-label="hud.termLabel">
+  <canvas id="term-mirror" width="800" height="600"></canvas>
+  <p class="cap" data-i18n="hud.termCap"></p>
+</section>
+
+<p id="cam-hint" class="hud" hidden data-i18n="hud.camHint"></p>
+
+<aside id="tuner" class="hud" hidden data-i18n-label="tuner.title">
+  <header class="tn-head">
+    <h2 data-i18n="tuner.title"></h2>
+    <button type="button" class="tn-x" data-act="close" data-i18n-title="tuner.close">×</button>
+  </header>
+  <div class="tn-views" role="group" data-i18n-label="tuner.views">
+    <button type="button" data-view="scene" aria-pressed="true" data-i18n="tuner.view.scene"></button>
+    <button type="button" data-view="hands" aria-pressed="false" data-i18n="tuner.view.hands"></button>
+    <button type="button" data-view="side" aria-pressed="false" data-i18n="tuner.view.side"></button>
+    <button type="button" data-view="front" aria-pressed="false" data-i18n="tuner.view.front"></button>
+    <button type="button" data-view="top" aria-pressed="false" data-i18n="tuner.view.top"></button>
+    <button type="button" data-view="free" aria-pressed="false" data-i18n="tuner.view.free"></button>
+  </div>
+  <p class="tn-readout"></p>
+  <div class="tn-body"></div>
+  <p class="tn-hint" data-i18n="tuner.hint"></p>
+  <footer class="tn-foot">
+    <button type="button" data-act="save" class="primary" data-i18n="tuner.save"></button>
+    <button type="button" data-act="revert" data-i18n="tuner.revert" data-i18n-title="tuner.revertTitle"></button>
+    <button type="button" data-act="defaults" data-i18n="tuner.defaults"></button>
+    <button type="button" data-act="copy" data-i18n="tuner.copy"></button>
+    <span class="tn-status" aria-live="polite"></span>
+  </footer>
+</aside>
+
+<aside id="help" class="hud" hidden>
+  <h2 data-i18n="help.title"></h2>
+  <ul data-i18n-html="help.items"></ul>
+  <p class="close" data-i18n="help.close"></p>
+</aside>
+
+<div id="boot">
+  <div class="inner">
+    <h1 data-i18n="boot.title"></h1>
+    <p class="sub" data-i18n="boot.sub"></p>
+    <div class="bar"><i id="boot-bar"></i></div>
+    <p id="boot-msg" data-i18n="boot.loading"></p>
+    <button id="boot-start" type="button" hidden data-i18n="boot.start"></button>
+    <button id="boot-lang" type="button" data-i18n="hud.lang" data-i18n-title="hud.langTitle"></button>
+  </div>
+</div>
+
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

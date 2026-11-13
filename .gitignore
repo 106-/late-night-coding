@@ -1,0 +1,12 @@
+# room baking: local only (depends on this PC's Blender and scene paths)
+bake/
+# this PC's Claude settings (preview launch config)
+.claude/
+# bake leftovers (bake_room.py writes EXRs here)
+assets/room/_tmp/
+x/
+_site/
+node_modules/
+*.blend1
+.DS_Store
+Thumbs.db

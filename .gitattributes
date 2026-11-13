@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.jpg binary
+*.png binary
+*.glb binary
+*.vrm binary
+# third-party files stay byte-for-byte as published
+vendor/** -text

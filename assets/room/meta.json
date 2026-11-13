@@ -1,0 +1,4681 @@
+{
+ "width": 2400,
+ "height": 1350,
+ "vfov": 41.11209043916693,
+ "near": 0.1,
+ "far": 1000.0,
+ "camera": {
+  "position": [
+   -1.90093,
+   1.09785,
+   1.4963
+  ],
+  "quaternion": [
+   -0.0673162043094635,
+   -0.261550635099411,
+   -0.018289409577846527,
+   0.9626657366752625
+  ]
+ },
+ "keyboardObjects": [
+  {
+   "name": "PROP_keyboard lower wedge enclosure",
+   "type": "MESH",
+   "center": [
+    -1.52843,
+    0.76711,
+    0.61284
+   ],
+   "top": 0.77787,
+   "size": [
+    0.35474,
+    0.60862,
+    0.02153
+   ]
+  },
+  {
+   "name": "PROP_keyboard upper case lip",
+   "type": "MESH",
+   "center": [
+    -1.52843,
+    0.77679,
+    0.61284
+   ],
+   "top": 0.7802,
+   "size": [
+    0.35474,
+    0.60862,
+    0.00682
+   ]
+  },
+  {
+   "name": "PROP_keyboard switch plate",
+   "type": "MESH",
+   "center": [
+    -1.52843,
+    0.7802,
+    0.61284
+   ],
+   "top": 0.78134,
+   "size": [
+    0.33815,
+    0.59285,
+    0.00227
+   ]
+  },
+  {
+   "name": "PROP_keyboard silicone foot",
+   "type": "MESH",
+   "center": [
+    -1.39595,
+    0.75407,
+    0.8124
+   ],
+   "top": 0.75635,
+   "size": [
+    0.02314,
+    0.03477,
+    0.00454
+   ]
+  },
+  {
+   "name": "PROP_keyboard silicone foot.001",
+   "type": "MESH",
+   "center": [
+    -1.50998,
+    0.75407,
+    0.85167
+   ],
+   "top": 0.75635,
+   "size": [
+    0.02314,
+    0.03477,
+    0.00454
+   ]
+  },
+  {
+   "name": "PROP_keyboard silicone foot.002",
+   "type": "MESH",
+   "center": [
+    -1.54689,
+    0.75407,
+    0.37402
+   ],
+   "top": 0.75635,
+   "size": [
+    0.02314,
+    0.03477,
+    0.00454
+   ]
+  },
+  {
+   "name": "PROP_keyboard silicone foot.003",
+   "type": "MESH",
+   "center": [
+    -1.66092,
+    0.75407,
+    0.41329
+   ],
+   "top": 0.75635,
+   "size": [
+    0.02314,
+    0.03477,
+    0.00454
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key `",
+   "type": "MESH",
+   "center": [
+    -1.47816,
+    0.78998,
+    0.87823
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend `",
+   "type": "FONT",
+   "center": [
+    -1.47787,
+    0.79464,
+    0.87829
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00075,
+    0.00084,
+    0.0
+   ],
+   "text": "`",
+   "pos": [
+    -1.47689,
+    0.79464,
+    0.87779
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 1",
+   "type": "MESH",
+   "center": [
+    -1.48647,
+    0.78998,
+    0.8541
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 1",
+   "type": "FONT",
+   "center": [
+    -1.48526,
+    0.79464,
+    0.85365
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00249,
+    0.00195,
+    0.0
+   ],
+   "text": "1",
+   "pos": [
+    -1.4852,
+    0.79464,
+    0.85366
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 2",
+   "type": "MESH",
+   "center": [
+    -1.49478,
+    0.78998,
+    0.82996
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 2",
+   "type": "FONT",
+   "center": [
+    -1.49357,
+    0.79464,
+    0.82958
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00256,
+    0.00204,
+    0.0
+   ],
+   "text": "2",
+   "pos": [
+    -1.49351,
+    0.79464,
+    0.82952
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 3",
+   "type": "MESH",
+   "center": [
+    -1.50309,
+    0.78998,
+    0.80582
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 3",
+   "type": "FONT",
+   "center": [
+    -1.50187,
+    0.79464,
+    0.80541
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00262,
+    0.0021,
+    0.0
+   ],
+   "text": "3",
+   "pos": [
+    -1.50182,
+    0.79464,
+    0.80539
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 4",
+   "type": "MESH",
+   "center": [
+    -1.5114,
+    0.78998,
+    0.78169
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 4",
+   "type": "FONT",
+   "center": [
+    -1.51018,
+    0.79464,
+    0.78128
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00259,
+    0.00222,
+    0.0
+   ],
+   "text": "4",
+   "pos": [
+    -1.51013,
+    0.79464,
+    0.78125
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 5",
+   "type": "MESH",
+   "center": [
+    -1.51971,
+    0.78998,
+    0.75755
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 5",
+   "type": "FONT",
+   "center": [
+    -1.51847,
+    0.79464,
+    0.75714
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00257,
+    0.00207,
+    0.0
+   ],
+   "text": "5",
+   "pos": [
+    -1.51844,
+    0.79464,
+    0.75711
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 6",
+   "type": "MESH",
+   "center": [
+    -1.52802,
+    0.78998,
+    0.73341
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 6",
+   "type": "FONT",
+   "center": [
+    -1.52681,
+    0.79464,
+    0.73298
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00264,
+    0.00217,
+    0.0
+   ],
+   "text": "6",
+   "pos": [
+    -1.52675,
+    0.79464,
+    0.73298
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 7",
+   "type": "MESH",
+   "center": [
+    -1.53634,
+    0.78998,
+    0.70928
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 7",
+   "type": "FONT",
+   "center": [
+    -1.53511,
+    0.79464,
+    0.70886
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00253,
+    0.00204,
+    0.0
+   ],
+   "text": "7",
+   "pos": [
+    -1.53506,
+    0.79464,
+    0.70884
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 8",
+   "type": "MESH",
+   "center": [
+    -1.54465,
+    0.78998,
+    0.68514
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 8",
+   "type": "FONT",
+   "center": [
+    -1.54342,
+    0.79464,
+    0.68472
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00264,
+    0.00216,
+    0.0
+   ],
+   "text": "8",
+   "pos": [
+    -1.54337,
+    0.79464,
+    0.6847
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 9",
+   "type": "MESH",
+   "center": [
+    -1.55296,
+    0.78998,
+    0.66101
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 9",
+   "type": "FONT",
+   "center": [
+    -1.55173,
+    0.79464,
+    0.6606
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00264,
+    0.00217,
+    0.0
+   ],
+   "text": "9",
+   "pos": [
+    -1.55168,
+    0.79464,
+    0.66057
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 0",
+   "type": "MESH",
+   "center": [
+    -1.56127,
+    0.78998,
+    0.63687
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 0",
+   "type": "FONT",
+   "center": [
+    -1.56005,
+    0.79464,
+    0.63645
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00264,
+    0.00217,
+    0.0
+   ],
+   "text": "0",
+   "pos": [
+    -1.56,
+    0.79464,
+    0.63643
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key -",
+   "type": "MESH",
+   "center": [
+    -1.56958,
+    0.78998,
+    0.61273
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend -",
+   "type": "FONT",
+   "center": [
+    -1.5681,
+    0.79464,
+    0.61222
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00048,
+    0.00083,
+    0.0
+   ],
+   "text": "-",
+   "pos": [
+    -1.56831,
+    0.79464,
+    0.6123
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key =",
+   "type": "MESH",
+   "center": [
+    -1.57789,
+    0.78998,
+    0.5886
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend =",
+   "type": "FONT",
+   "center": [
+    -1.57652,
+    0.79464,
+    0.58813
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00141,
+    0.00205,
+    0.0
+   ],
+   "text": "=",
+   "pos": [
+    -1.57662,
+    0.79464,
+    0.58816
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Back",
+   "type": "MESH",
+   "center": [
+    -1.59036,
+    0.79,
+    0.55239
+   ],
+   "top": 0.79576,
+   "size": [
+    0.03849,
+    0.05433,
+    0.01152
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Back",
+   "type": "FONT",
+   "center": [
+    -1.58917,
+    0.79464,
+    0.55187
+   ],
+   "top": 0.79464,
+   "size": [
+    0.0033,
+    0.00543,
+    0.0
+   ],
+   "text": "Back",
+   "pos": [
+    -1.58908,
+    0.79464,
+    0.55195
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Tab",
+   "type": "MESH",
+   "center": [
+    -1.4561,
+    0.78829,
+    0.86389
+   ],
+   "top": 0.79332,
+   "size": [
+    0.03431,
+    0.04223,
+    0.01005
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Tab",
+   "type": "FONT",
+   "center": [
+    -1.45486,
+    0.79253,
+    0.86353
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00292,
+    0.00434,
+    0.0
+   ],
+   "text": "Tab",
+   "pos": [
+    -1.45483,
+    0.79253,
+    0.86345
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Q",
+   "type": "MESH",
+   "center": [
+    -1.46649,
+    0.78828,
+    0.83372
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Q",
+   "type": "FONT",
+   "center": [
+    -1.4651,
+    0.79253,
+    0.83324
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00313,
+    0.00277,
+    0.0
+   ],
+   "text": "Q",
+   "pos": [
+    -1.46522,
+    0.79253,
+    0.83328
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key W",
+   "type": "MESH",
+   "center": [
+    -1.4748,
+    0.78828,
+    0.80958
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend W",
+   "type": "FONT",
+   "center": [
+    -1.47358,
+    0.79253,
+    0.80916
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00297,
+    0.00333,
+    0.0
+   ],
+   "text": "W",
+   "pos": [
+    -1.47353,
+    0.79253,
+    0.80914
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key E",
+   "type": "MESH",
+   "center": [
+    -1.48311,
+    0.78828,
+    0.78544
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend E",
+   "type": "FONT",
+   "center": [
+    -1.48191,
+    0.79253,
+    0.78498
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00253,
+    0.00205,
+    0.0
+   ],
+   "text": "E",
+   "pos": [
+    -1.48184,
+    0.79253,
+    0.78501
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key R",
+   "type": "MESH",
+   "center": [
+    -1.49142,
+    0.78828,
+    0.76131
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend R",
+   "type": "FONT",
+   "center": [
+    -1.49024,
+    0.79253,
+    0.76079
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00263,
+    0.00233,
+    0.0
+   ],
+   "text": "R",
+   "pos": [
+    -1.49015,
+    0.79253,
+    0.76087
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key T",
+   "type": "MESH",
+   "center": [
+    -1.49973,
+    0.78828,
+    0.73717
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend T",
+   "type": "FONT",
+   "center": [
+    -1.49851,
+    0.79253,
+    0.73675
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00267,
+    0.00246,
+    0.0
+   ],
+   "text": "T",
+   "pos": [
+    -1.49846,
+    0.79253,
+    0.73673
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Y",
+   "type": "MESH",
+   "center": [
+    -1.50804,
+    0.78828,
+    0.71304
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Y",
+   "type": "FONT",
+   "center": [
+    -1.50682,
+    0.79253,
+    0.71262
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00267,
+    0.00246,
+    0.0
+   ],
+   "text": "Y",
+   "pos": [
+    -1.50677,
+    0.79253,
+    0.7126
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key U",
+   "type": "MESH",
+   "center": [
+    -1.51635,
+    0.78828,
+    0.6889
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend U",
+   "type": "FONT",
+   "center": [
+    -1.51511,
+    0.79253,
+    0.68847
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00266,
+    0.00231,
+    0.0
+   ],
+   "text": "U",
+   "pos": [
+    -1.51508,
+    0.79253,
+    0.68846
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key I",
+   "type": "MESH",
+   "center": [
+    -1.52466,
+    0.78828,
+    0.66476
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend I",
+   "type": "FONT",
+   "center": [
+    -1.52344,
+    0.79253,
+    0.66434
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00217,
+    0.00099,
+    0.0
+   ],
+   "text": "I",
+   "pos": [
+    -1.52339,
+    0.79253,
+    0.66432
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key O",
+   "type": "MESH",
+   "center": [
+    -1.53297,
+    0.78828,
+    0.64063
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend O",
+   "type": "FONT",
+   "center": [
+    -1.53175,
+    0.79253,
+    0.64021
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00281,
+    0.00266,
+    0.0
+   ],
+   "text": "O",
+   "pos": [
+    -1.5317,
+    0.79253,
+    0.64019
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key P",
+   "type": "MESH",
+   "center": [
+    -1.54129,
+    0.78828,
+    0.61649
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend P",
+   "type": "FONT",
+   "center": [
+    -1.5401,
+    0.79253,
+    0.61598
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00253,
+    0.00205,
+    0.0
+   ],
+   "text": "P",
+   "pos": [
+    -1.54001,
+    0.79253,
+    0.61605
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key [",
+   "type": "MESH",
+   "center": [
+    -1.5496,
+    0.78828,
+    0.59235
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend [",
+   "type": "FONT",
+   "center": [
+    -1.54823,
+    0.79253,
+    0.5919
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00273,
+    0.00146,
+    0.0
+   ],
+   "text": "[",
+   "pos": [
+    -1.54832,
+    0.79253,
+    0.59192
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key ]",
+   "type": "MESH",
+   "center": [
+    -1.55791,
+    0.78828,
+    0.56822
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend ]",
+   "type": "FONT",
+   "center": [
+    -1.55655,
+    0.79253,
+    0.56773
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00273,
+    0.00146,
+    0.0
+   ],
+   "text": "]",
+   "pos": [
+    -1.55664,
+    0.79253,
+    0.56778
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key \\",
+   "type": "MESH",
+   "center": [
+    -1.5683,
+    0.78829,
+    0.53805
+   ],
+   "top": 0.79332,
+   "size": [
+    0.03431,
+    0.04223,
+    0.01005
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend \\",
+   "type": "FONT",
+   "center": [
+    -1.56694,
+    0.79253,
+    0.53758
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00266,
+    0.00176,
+    0.0
+   ],
+   "text": "\\",
+   "pos": [
+    -1.56702,
+    0.79253,
+    0.53761
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Caps",
+   "type": "MESH",
+   "center": [
+    -1.433,
+    0.78682,
+    0.85256
+   ],
+   "top": 0.79135,
+   "size": [
+    0.03637,
+    0.04824,
+    0.00906
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Caps",
+   "type": "FONT",
+   "center": [
+    -1.43157,
+    0.79098,
+    0.85206
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00369,
+    0.00563,
+    0.0
+   ],
+   "text": "Caps",
+   "pos": [
+    -1.43173,
+    0.79098,
+    0.85212
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key A",
+   "type": "MESH",
+   "center": [
+    -1.44443,
+    0.78681,
+    0.81937
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend A",
+   "type": "FONT",
+   "center": [
+    -1.44321,
+    0.79098,
+    0.81895
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00272,
+    0.00261,
+    0.0
+   ],
+   "text": "A",
+   "pos": [
+    -1.44316,
+    0.79098,
+    0.81893
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key S",
+   "type": "MESH",
+   "center": [
+    -1.45274,
+    0.78681,
+    0.79523
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend S",
+   "type": "FONT",
+   "center": [
+    -1.45153,
+    0.79098,
+    0.7948
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00265,
+    0.0022,
+    0.0
+   ],
+   "text": "S",
+   "pos": [
+    -1.45147,
+    0.79098,
+    0.7948
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key D",
+   "type": "MESH",
+   "center": [
+    -1.46105,
+    0.78681,
+    0.7711
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend D",
+   "type": "FONT",
+   "center": [
+    -1.45985,
+    0.79098,
+    0.77062
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00267,
+    0.00245,
+    0.0
+   ],
+   "text": "D",
+   "pos": [
+    -1.45978,
+    0.79098,
+    0.77066
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F",
+   "type": "MESH",
+   "center": [
+    -1.46936,
+    0.78681,
+    0.74696
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F",
+   "type": "FONT",
+   "center": [
+    -1.46816,
+    0.79098,
+    0.74649
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00248,
+    0.0019,
+    0.0
+   ],
+   "text": "F",
+   "pos": [
+    -1.46809,
+    0.79098,
+    0.74653
+   ]
+  },
+  {
+   "name": "PROP_keyboard homing bar",
+   "type": "MESH",
+   "center": [
+    -1.46302,
+    0.79161,
+    0.74478
+   ],
+   "top": 0.79189,
+   "size": [
+    0.00229,
+    0.0047,
+    0.00057
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key G",
+   "type": "MESH",
+   "center": [
+    -1.47767,
+    0.78681,
+    0.72283
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend G",
+   "type": "FONT",
+   "center": [
+    -1.47644,
+    0.79098,
+    0.72244
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00277,
+    0.00255,
+    0.0
+   ],
+   "text": "G",
+   "pos": [
+    -1.4764,
+    0.79098,
+    0.72239
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key H",
+   "type": "MESH",
+   "center": [
+    -1.48598,
+    0.78681,
+    0.69869
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend H",
+   "type": "FONT",
+   "center": [
+    -1.48476,
+    0.79098,
+    0.69827
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00261,
+    0.00229,
+    0.0
+   ],
+   "text": "H",
+   "pos": [
+    -1.48471,
+    0.79098,
+    0.69825
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key J",
+   "type": "MESH",
+   "center": [
+    -1.49429,
+    0.78681,
+    0.67455
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend J",
+   "type": "FONT",
+   "center": [
+    -1.49272,
+    0.79098,
+    0.67425
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00288,
+    0.00161,
+    0.0
+   ],
+   "text": "J",
+   "pos": [
+    -1.49302,
+    0.79098,
+    0.67412
+   ]
+  },
+  {
+   "name": "PROP_keyboard homing bar.001",
+   "type": "MESH",
+   "center": [
+    -1.48796,
+    0.79161,
+    0.67237
+   ],
+   "top": 0.79189,
+   "size": [
+    0.00229,
+    0.0047,
+    0.00057
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key K",
+   "type": "MESH",
+   "center": [
+    -1.5026,
+    0.78681,
+    0.65042
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend K",
+   "type": "FONT",
+   "center": [
+    -1.50144,
+    0.79098,
+    0.64983
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00264,
+    0.00236,
+    0.0
+   ],
+   "text": "K",
+   "pos": [
+    -1.50133,
+    0.79098,
+    0.64998
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key L",
+   "type": "MESH",
+   "center": [
+    -1.51091,
+    0.78681,
+    0.62628
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend L",
+   "type": "FONT",
+   "center": [
+    -1.50974,
+    0.79098,
+    0.62573
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00251,
+    0.002,
+    0.0
+   ],
+   "text": "L",
+   "pos": [
+    -1.50964,
+    0.79098,
+    0.62584
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key ;",
+   "type": "MESH",
+   "center": [
+    -1.51922,
+    0.78681,
+    0.60214
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend ;",
+   "type": "FONT",
+   "center": [
+    -1.51752,
+    0.79098,
+    0.60162
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00194,
+    0.00103,
+    0.0
+   ],
+   "text": ";",
+   "pos": [
+    -1.51796,
+    0.79098,
+    0.60171
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key '",
+   "type": "MESH",
+   "center": [
+    -1.52753,
+    0.78681,
+    0.57801
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend '",
+   "type": "FONT",
+   "center": [
+    -1.52697,
+    0.79098,
+    0.57781
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00085,
+    0.0005,
+    0.0
+   ],
+   "text": "'",
+   "pos": [
+    -1.52627,
+    0.79098,
+    0.57757
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Enter",
+   "type": "MESH",
+   "center": [
+    -1.54104,
+    0.78683,
+    0.53879
+   ],
+   "top": 0.79136,
+   "size": [
+    0.04053,
+    0.06031,
+    0.00906
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Enter",
+   "type": "FONT",
+   "center": [
+    -1.53983,
+    0.79098,
+    0.53826
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00342,
+    0.00595,
+    0.0
+   ],
+   "text": "Enter",
+   "pos": [
+    -1.53977,
+    0.79098,
+    0.53835
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Shift",
+   "type": "MESH",
+   "center": [
+    -1.41094,
+    0.78661,
+    0.83821
+   ],
+   "top": 0.7919,
+   "size": [
+    0.04056,
+    0.06035,
+    0.01058
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Shift",
+   "type": "FONT",
+   "center": [
+    -1.40974,
+    0.79115,
+    0.83775
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00321,
+    0.00516,
+    0.0
+   ],
+   "text": "Shift",
+   "pos": [
+    -1.40967,
+    0.79115,
+    0.83778
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Z",
+   "type": "MESH",
+   "center": [
+    -1.42444,
+    0.78659,
+    0.79899
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Z",
+   "type": "FONT",
+   "center": [
+    -1.42323,
+    0.79115,
+    0.79857
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00265,
+    0.0024,
+    0.0
+   ],
+   "text": "Z",
+   "pos": [
+    -1.42318,
+    0.79115,
+    0.79856
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key X",
+   "type": "MESH",
+   "center": [
+    -1.43275,
+    0.78659,
+    0.77485
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend X",
+   "type": "FONT",
+   "center": [
+    -1.43154,
+    0.79115,
+    0.77444
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00268,
+    0.00249,
+    0.0
+   ],
+   "text": "X",
+   "pos": [
+    -1.43149,
+    0.79115,
+    0.77442
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key C",
+   "type": "MESH",
+   "center": [
+    -1.44106,
+    0.78659,
+    0.75072
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend C",
+   "type": "FONT",
+   "center": [
+    -1.43985,
+    0.79115,
+    0.7503
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00272,
+    0.00241,
+    0.0
+   ],
+   "text": "C",
+   "pos": [
+    -1.4398,
+    0.79115,
+    0.75028
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key V",
+   "type": "MESH",
+   "center": [
+    -1.44937,
+    0.78659,
+    0.72658
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend V",
+   "type": "FONT",
+   "center": [
+    -1.44816,
+    0.79115,
+    0.72616
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00272,
+    0.00261,
+    0.0
+   ],
+   "text": "V",
+   "pos": [
+    -1.44811,
+    0.79115,
+    0.72615
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key B",
+   "type": "MESH",
+   "center": [
+    -1.45768,
+    0.78659,
+    0.70245
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend B",
+   "type": "FONT",
+   "center": [
+    -1.45649,
+    0.79115,
+    0.70199
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00258,
+    0.00218,
+    0.0
+   ],
+   "text": "B",
+   "pos": [
+    -1.45642,
+    0.79115,
+    0.70201
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key N",
+   "type": "MESH",
+   "center": [
+    -1.466,
+    0.78659,
+    0.67831
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend N",
+   "type": "FONT",
+   "center": [
+    -1.46478,
+    0.79115,
+    0.67789
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00261,
+    0.00228,
+    0.0
+   ],
+   "text": "N",
+   "pos": [
+    -1.46473,
+    0.79115,
+    0.67787
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key M",
+   "type": "MESH",
+   "center": [
+    -1.47431,
+    0.78659,
+    0.65417
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend M",
+   "type": "FONT",
+   "center": [
+    -1.47309,
+    0.79115,
+    0.65375
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00272,
+    0.00261,
+    0.0
+   ],
+   "text": "M",
+   "pos": [
+    -1.47304,
+    0.79115,
+    0.65374
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key ,",
+   "type": "MESH",
+   "center": [
+    -1.48262,
+    0.78659,
+    0.63004
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend ,",
+   "type": "FONT",
+   "center": [
+    -1.48037,
+    0.79115,
+    0.6293
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00082,
+    0.00064,
+    0.0
+   ],
+   "text": ",",
+   "pos": [
+    -1.48135,
+    0.79115,
+    0.6296
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key .",
+   "type": "MESH",
+   "center": [
+    -1.49093,
+    0.78659,
+    0.6059
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend .",
+   "type": "FONT",
+   "center": [
+    -1.48886,
+    0.79115,
+    0.60519
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00045,
+    0.00041,
+    0.0
+   ],
+   "text": ".",
+   "pos": [
+    -1.48966,
+    0.79115,
+    0.60546
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key /",
+   "type": "MESH",
+   "center": [
+    -1.49924,
+    0.78659,
+    0.58176
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend /",
+   "type": "FONT",
+   "center": [
+    -1.4979,
+    0.79115,
+    0.5813
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00266,
+    0.00176,
+    0.0
+   ],
+   "text": "/",
+   "pos": [
+    -1.49797,
+    0.79115,
+    0.58133
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Shift.001",
+   "type": "MESH",
+   "center": [
+    -1.51482,
+    0.78661,
+    0.53651
+   ],
+   "top": 0.7919,
+   "size": [
+    0.04472,
+    0.07241,
+    0.01058
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Shift.001",
+   "type": "FONT",
+   "center": [
+    -1.51363,
+    0.79115,
+    0.53605
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00321,
+    0.00516,
+    0.0
+   ],
+   "text": "Shift",
+   "pos": [
+    -1.51356,
+    0.79115,
+    0.53607
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Ctrl",
+   "type": "MESH",
+   "center": [
+    -1.38264,
+    0.78635,
+    0.84197
+   ],
+   "top": 0.79236,
+   "size": [
+    0.03227,
+    0.03624,
+    0.01202
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Ctrl",
+   "type": "FONT",
+   "center": [
+    -1.38142,
+    0.79131,
+    0.84159
+   ],
+   "top": 0.79131,
+   "size": [
+    0.00279,
+    0.00397,
+    0.0
+   ],
+   "text": "Ctrl",
+   "pos": [
+    -1.38138,
+    0.79131,
+    0.84153
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Win",
+   "type": "MESH",
+   "center": [
+    -1.39303,
+    0.78635,
+    0.8118
+   ],
+   "top": 0.79236,
+   "size": [
+    0.03227,
+    0.03624,
+    0.01202
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Win",
+   "type": "FONT",
+   "center": [
+    -1.39182,
+    0.79131,
+    0.81144
+   ],
+   "top": 0.79131,
+   "size": [
+    0.00287,
+    0.00428,
+    0.0
+   ],
+   "text": "Win",
+   "pos": [
+    -1.39177,
+    0.79131,
+    0.81136
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Alt",
+   "type": "MESH",
+   "center": [
+    -1.40342,
+    0.78635,
+    0.78163
+   ],
+   "top": 0.79236,
+   "size": [
+    0.03227,
+    0.03624,
+    0.01202
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Alt",
+   "type": "FONT",
+   "center": [
+    -1.40222,
+    0.79131,
+    0.78123
+   ],
+   "top": 0.79131,
+   "size": [
+    0.00254,
+    0.00331,
+    0.0
+   ],
+   "text": "Alt",
+   "pos": [
+    -1.40216,
+    0.79131,
+    0.78119
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key ",
+   "type": "MESH",
+   "center": [
+    -1.43459,
+    0.78637,
+    0.69112
+   ],
+   "top": 0.7924,
+   "size": [
+    0.07383,
+    0.15692,
+    0.01205
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Alt.001",
+   "type": "MESH",
+   "center": [
+    -1.46575,
+    0.78635,
+    0.60061
+   ],
+   "top": 0.79236,
+   "size": [
+    0.03227,
+    0.03624,
+    0.01202
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Alt.001",
+   "type": "FONT",
+   "center": [
+    -1.46455,
+    0.79131,
+    0.60021
+   ],
+   "top": 0.79131,
+   "size": [
+    0.00254,
+    0.00331,
+    0.0
+   ],
+   "text": "Alt",
+   "pos": [
+    -1.46449,
+    0.79131,
+    0.60017
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Win.001",
+   "type": "MESH",
+   "center": [
+    -1.47614,
+    0.78635,
+    0.57044
+   ],
+   "top": 0.79236,
+   "size": [
+    0.03227,
+    0.03624,
+    0.01202
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Win.001",
+   "type": "FONT",
+   "center": [
+    -1.47493,
+    0.79131,
+    0.57008
+   ],
+   "top": 0.79131,
+   "size": [
+    0.00287,
+    0.00428,
+    0.0
+   ],
+   "text": "Win",
+   "pos": [
+    -1.47488,
+    0.79131,
+    0.57
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Menu",
+   "type": "MESH",
+   "center": [
+    -1.48653,
+    0.78635,
+    0.54027
+   ],
+   "top": 0.79236,
+   "size": [
+    0.03227,
+    0.03624,
+    0.01202
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Menu",
+   "type": "FONT",
+   "center": [
+    -1.48529,
+    0.79131,
+    0.53983
+   ],
+   "top": 0.79131,
+   "size": [
+    0.0034,
+    0.00589,
+    0.0
+   ],
+   "text": "Menu",
+   "pos": [
+    -1.48527,
+    0.79131,
+    0.53983
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Ctrl.001",
+   "type": "MESH",
+   "center": [
+    -1.49692,
+    0.78635,
+    0.51009
+   ],
+   "top": 0.79236,
+   "size": [
+    0.03227,
+    0.03624,
+    0.01202
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Ctrl.001",
+   "type": "FONT",
+   "center": [
+    -1.4957,
+    0.79131,
+    0.50972
+   ],
+   "top": 0.79131,
+   "size": [
+    0.00279,
+    0.00397,
+    0.0
+   ],
+   "text": "Ctrl",
+   "pos": [
+    -1.49565,
+    0.79131,
+    0.50966
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Esc",
+   "type": "MESH",
+   "center": [
+    -1.50984,
+    0.79126,
+    0.88914
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Esc",
+   "type": "FONT",
+   "center": [
+    -1.5086,
+    0.79591,
+    0.88867
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00267,
+    0.00376,
+    0.0
+   ],
+   "text": "Esc",
+   "pos": [
+    -1.50856,
+    0.79591,
+    0.8887
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F1",
+   "type": "MESH",
+   "center": [
+    -1.5223,
+    0.79126,
+    0.85293
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F1",
+   "type": "FONT",
+   "center": [
+    -1.52107,
+    0.79591,
+    0.8525
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00226,
+    0.00266,
+    0.0
+   ],
+   "text": "F1",
+   "pos": [
+    -1.52103,
+    0.79591,
+    0.8525
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F2",
+   "type": "MESH",
+   "center": [
+    -1.53061,
+    0.79126,
+    0.8288
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F2",
+   "type": "FONT",
+   "center": [
+    -1.52939,
+    0.79591,
+    0.82838
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00228,
+    0.00265,
+    0.0
+   ],
+   "text": "F2",
+   "pos": [
+    -1.52934,
+    0.79591,
+    0.82836
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F3",
+   "type": "MESH",
+   "center": [
+    -1.53892,
+    0.79126,
+    0.80466
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F3",
+   "type": "FONT",
+   "center": [
+    -1.53769,
+    0.79591,
+    0.80422
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00233,
+    0.00271,
+    0.0
+   ],
+   "text": "F3",
+   "pos": [
+    -1.53765,
+    0.79591,
+    0.80422
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F4",
+   "type": "MESH",
+   "center": [
+    -1.54723,
+    0.79126,
+    0.78053
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F4",
+   "type": "FONT",
+   "center": [
+    -1.54601,
+    0.79591,
+    0.78006
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00229,
+    0.00274,
+    0.0
+   ],
+   "text": "F4",
+   "pos": [
+    -1.54596,
+    0.79591,
+    0.78009
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F5",
+   "type": "MESH",
+   "center": [
+    -1.55737,
+    0.79126,
+    0.75108
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F5",
+   "type": "FONT",
+   "center": [
+    -1.55613,
+    0.79591,
+    0.75064
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00229,
+    0.00268,
+    0.0
+   ],
+   "text": "F5",
+   "pos": [
+    -1.5561,
+    0.79591,
+    0.75064
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F6",
+   "type": "MESH",
+   "center": [
+    -1.56568,
+    0.79126,
+    0.72694
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F6",
+   "type": "FONT",
+   "center": [
+    -1.56446,
+    0.79591,
+    0.72648
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00234,
+    0.00274,
+    0.0
+   ],
+   "text": "F6",
+   "pos": [
+    -1.56441,
+    0.79591,
+    0.7265
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F7",
+   "type": "MESH",
+   "center": [
+    -1.57399,
+    0.79126,
+    0.70281
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F7",
+   "type": "FONT",
+   "center": [
+    -1.57276,
+    0.79591,
+    0.70237
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00227,
+    0.00268,
+    0.0
+   ],
+   "text": "F7",
+   "pos": [
+    -1.57272,
+    0.79591,
+    0.70237
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F8",
+   "type": "MESH",
+   "center": [
+    -1.5823,
+    0.79126,
+    0.67867
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F8",
+   "type": "FONT",
+   "center": [
+    -1.58108,
+    0.79591,
+    0.67821
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00234,
+    0.00273,
+    0.0
+   ],
+   "text": "F8",
+   "pos": [
+    -1.58103,
+    0.79591,
+    0.67823
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F9",
+   "type": "MESH",
+   "center": [
+    -1.59244,
+    0.79126,
+    0.64922
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F9",
+   "type": "FONT",
+   "center": [
+    -1.59122,
+    0.79591,
+    0.64877
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00233,
+    0.00273,
+    0.0
+   ],
+   "text": "F9",
+   "pos": [
+    -1.59117,
+    0.79591,
+    0.64879
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F10",
+   "type": "MESH",
+   "center": [
+    -1.60075,
+    0.79126,
+    0.62509
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F10",
+   "type": "FONT",
+   "center": [
+    -1.59953,
+    0.79591,
+    0.62463
+   ],
+   "top": 0.79591,
+   "size": [
+    0.0028,
+    0.00407,
+    0.0
+   ],
+   "text": "F10",
+   "pos": [
+    -1.59948,
+    0.79591,
+    0.62465
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F11",
+   "type": "MESH",
+   "center": [
+    -1.60907,
+    0.79126,
+    0.60095
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F11",
+   "type": "FONT",
+   "center": [
+    -1.60783,
+    0.79591,
+    0.60052
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00272,
+    0.00399,
+    0.0
+   ],
+   "text": "F11",
+   "pos": [
+    -1.60779,
+    0.79591,
+    0.60051
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key F12",
+   "type": "MESH",
+   "center": [
+    -1.61738,
+    0.79126,
+    0.57682
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend F12",
+   "type": "FONT",
+   "center": [
+    -1.61616,
+    0.79591,
+    0.5764
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00274,
+    0.00399,
+    0.0
+   ],
+   "text": "F12",
+   "pos": [
+    -1.6161,
+    0.79591,
+    0.57638
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key PrtSc",
+   "type": "MESH",
+   "center": [
+    -1.63612,
+    0.79126,
+    0.52238
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend PrtSc",
+   "type": "FONT",
+   "center": [
+    -1.6349,
+    0.79591,
+    0.52191
+   ],
+   "top": 0.79591,
+   "size": [
+    0.00333,
+    0.00563,
+    0.0
+   ],
+   "text": "PrtSc",
+   "pos": [
+    -1.63485,
+    0.79591,
+    0.52194
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Scroll",
+   "type": "MESH",
+   "center": [
+    -1.64443,
+    0.79126,
+    0.49824
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Scroll",
+   "type": "FONT",
+   "center": [
+    -1.64321,
+    0.79591,
+    0.49785
+   ],
+   "top": 0.79591,
+   "size": [
+    0.0035,
+    0.00601,
+    0.0
+   ],
+   "text": "Scroll",
+   "pos": [
+    -1.64316,
+    0.79591,
+    0.4978
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Pause",
+   "type": "MESH",
+   "center": [
+    -1.65274,
+    0.79126,
+    0.4741
+   ],
+   "top": 0.797,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Pause",
+   "type": "FONT",
+   "center": [
+    -1.65151,
+    0.79591,
+    0.47363
+   ],
+   "top": 0.79591,
+   "size": [
+    0.0036,
+    0.00647,
+    0.0
+   ],
+   "text": "Pause",
+   "pos": [
+    -1.65147,
+    0.79591,
+    0.47366
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Ins",
+   "type": "MESH",
+   "center": [
+    -1.60445,
+    0.78998,
+    0.51147
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Ins",
+   "type": "FONT",
+   "center": [
+    -1.60322,
+    0.79464,
+    0.51099
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00249,
+    0.00326,
+    0.0
+   ],
+   "text": "Ins",
+   "pos": [
+    -1.60317,
+    0.79464,
+    0.51103
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Home",
+   "type": "MESH",
+   "center": [
+    -1.61276,
+    0.78998,
+    0.48733
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Home",
+   "type": "FONT",
+   "center": [
+    -1.61152,
+    0.79464,
+    0.48686
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00357,
+    0.0064,
+    0.0
+   ],
+   "text": "Home",
+   "pos": [
+    -1.61148,
+    0.79464,
+    0.48689
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key PgUp",
+   "type": "MESH",
+   "center": [
+    -1.62107,
+    0.78998,
+    0.4632
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend PgUp",
+   "type": "FONT",
+   "center": [
+    -1.61963,
+    0.79464,
+    0.46265
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00373,
+    0.00581,
+    0.0
+   ],
+   "text": "PgUp",
+   "pos": [
+    -1.6198,
+    0.79464,
+    0.46276
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Del",
+   "type": "MESH",
+   "center": [
+    -1.58031,
+    0.78828,
+    0.50316
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Del",
+   "type": "FONT",
+   "center": [
+    -1.5791,
+    0.79253,
+    0.50273
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00268,
+    0.00364,
+    0.0
+   ],
+   "text": "Del",
+   "pos": [
+    -1.57904,
+    0.79253,
+    0.50272
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key End",
+   "type": "MESH",
+   "center": [
+    -1.58862,
+    0.78828,
+    0.47902
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend End",
+   "type": "FONT",
+   "center": [
+    -1.58741,
+    0.79253,
+    0.4786
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00285,
+    0.00414,
+    0.0
+   ],
+   "text": "End",
+   "pos": [
+    -1.58735,
+    0.79253,
+    0.47858
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key PgDn",
+   "type": "MESH",
+   "center": [
+    -1.59693,
+    0.78828,
+    0.45488
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend PgDn",
+   "type": "FONT",
+   "center": [
+    -1.59548,
+    0.79253,
+    0.45437
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00373,
+    0.00582,
+    0.0
+   ],
+   "text": "PgDn",
+   "pos": [
+    -1.59566,
+    0.79253,
+    0.45445
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Up",
+   "type": "MESH",
+   "center": [
+    -1.54034,
+    0.78732,
+    0.4624
+   ],
+   "top": 0.79332,
+   "size": [
+    0.03019,
+    0.0302,
+    0.012
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Up",
+   "type": "FONT",
+   "center": [
+    -1.53891,
+    0.79228,
+    0.46187
+   ],
+   "top": 0.79228,
+   "size": [
+    0.00284,
+    0.00324,
+    0.0
+   ],
+   "text": "Up",
+   "pos": [
+    -1.53908,
+    0.79228,
+    0.46196
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Left",
+   "type": "MESH",
+   "center": [
+    -1.50789,
+    0.78635,
+    0.47822
+   ],
+   "top": 0.79235,
+   "size": [
+    0.03019,
+    0.0302,
+    0.012
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Left",
+   "type": "FONT",
+   "center": [
+    -1.50671,
+    0.79131,
+    0.47773
+   ],
+   "top": 0.79131,
+   "size": [
+    0.00291,
+    0.00431,
+    0.0
+   ],
+   "text": "Left",
+   "pos": [
+    -1.50663,
+    0.79131,
+    0.47779
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Down",
+   "type": "MESH",
+   "center": [
+    -1.5162,
+    0.78635,
+    0.45409
+   ],
+   "top": 0.79235,
+   "size": [
+    0.03019,
+    0.0302,
+    0.012
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Down",
+   "type": "FONT",
+   "center": [
+    -1.51497,
+    0.79131,
+    0.45365
+   ],
+   "top": 0.79131,
+   "size": [
+    0.00346,
+    0.00608,
+    0.0
+   ],
+   "text": "Down",
+   "pos": [
+    -1.51494,
+    0.79131,
+    0.45365
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Right",
+   "type": "MESH",
+   "center": [
+    -1.52451,
+    0.78635,
+    0.42995
+   ],
+   "top": 0.79235,
+   "size": [
+    0.03019,
+    0.0302,
+    0.012
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Right",
+   "type": "FONT",
+   "center": [
+    -1.52313,
+    0.79131,
+    0.42939
+   ],
+   "top": 0.79131,
+   "size": [
+    0.00383,
+    0.00595,
+    0.0
+   ],
+   "text": "Right",
+   "pos": [
+    -1.52325,
+    0.79131,
+    0.42951
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Num",
+   "type": "MESH",
+   "center": [
+    -1.63062,
+    0.78998,
+    0.43545
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Num",
+   "type": "FONT",
+   "center": [
+    -1.62938,
+    0.79464,
+    0.43501
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00312,
+    0.00508,
+    0.0
+   ],
+   "text": "Num",
+   "pos": [
+    -1.62935,
+    0.79464,
+    0.43501
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key /.001",
+   "type": "MESH",
+   "center": [
+    -1.63893,
+    0.78998,
+    0.41131
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend /.001",
+   "type": "FONT",
+   "center": [
+    -1.63758,
+    0.79464,
+    0.41085
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00266,
+    0.00176,
+    0.0
+   ],
+   "text": "/",
+   "pos": [
+    -1.63766,
+    0.79464,
+    0.41087
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key *",
+   "type": "MESH",
+   "center": [
+    -1.64724,
+    0.78998,
+    0.38718
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend *",
+   "type": "FONT",
+   "center": [
+    -1.64645,
+    0.79464,
+    0.3869
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00173,
+    0.0017,
+    0.0
+   ],
+   "text": "*",
+   "pos": [
+    -1.64597,
+    0.79464,
+    0.38674
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key -.001",
+   "type": "MESH",
+   "center": [
+    -1.65556,
+    0.78998,
+    0.36304
+   ],
+   "top": 0.79573,
+   "size": [
+    0.03018,
+    0.03019,
+    0.01149
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend -.001",
+   "type": "FONT",
+   "center": [
+    -1.65408,
+    0.79464,
+    0.36253
+   ],
+   "top": 0.79464,
+   "size": [
+    0.00048,
+    0.00083,
+    0.0
+   ],
+   "text": "-",
+   "pos": [
+    -1.65428,
+    0.79464,
+    0.3626
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 7.001",
+   "type": "MESH",
+   "center": [
+    -1.60648,
+    0.78828,
+    0.42714
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 7.001",
+   "type": "FONT",
+   "center": [
+    -1.60526,
+    0.79253,
+    0.42672
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00253,
+    0.00204,
+    0.0
+   ],
+   "text": "7",
+   "pos": [
+    -1.60521,
+    0.79253,
+    0.4267
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 8.001",
+   "type": "MESH",
+   "center": [
+    -1.6148,
+    0.78828,
+    0.403
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 8.001",
+   "type": "FONT",
+   "center": [
+    -1.61357,
+    0.79253,
+    0.40258
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00264,
+    0.00216,
+    0.0
+   ],
+   "text": "8",
+   "pos": [
+    -1.61352,
+    0.79253,
+    0.40256
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 9.001",
+   "type": "MESH",
+   "center": [
+    -1.62311,
+    0.78828,
+    0.37887
+   ],
+   "top": 0.79329,
+   "size": [
+    0.03016,
+    0.03016,
+    0.01003
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 9.001",
+   "type": "FONT",
+   "center": [
+    -1.62188,
+    0.79253,
+    0.37846
+   ],
+   "top": 0.79253,
+   "size": [
+    0.00264,
+    0.00217,
+    0.0
+   ],
+   "text": "9",
+   "pos": [
+    -1.62183,
+    0.79253,
+    0.37843
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key +",
+   "type": "MESH",
+   "center": [
+    -1.61935,
+    0.7878,
+    0.35057
+   ],
+   "top": 0.79282,
+   "size": [
+    0.05429,
+    0.03847,
+    0.01004
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend +",
+   "type": "FONT",
+   "center": [
+    -1.61798,
+    0.79204,
+    0.3501
+   ],
+   "top": 0.79204,
+   "size": [
+    0.00239,
+    0.00239,
+    0.0
+   ],
+   "text": "+",
+   "pos": [
+    -1.61808,
+    0.79204,
+    0.35014
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 4.001",
+   "type": "MESH",
+   "center": [
+    -1.58234,
+    0.78681,
+    0.41883
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 4.001",
+   "type": "FONT",
+   "center": [
+    -1.58113,
+    0.79098,
+    0.41842
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00259,
+    0.00222,
+    0.0
+   ],
+   "text": "4",
+   "pos": [
+    -1.58108,
+    0.79098,
+    0.41839
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 5.001",
+   "type": "MESH",
+   "center": [
+    -1.59065,
+    0.78681,
+    0.39469
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 5.001",
+   "type": "FONT",
+   "center": [
+    -1.58941,
+    0.79098,
+    0.39428
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00257,
+    0.00207,
+    0.0
+   ],
+   "text": "5",
+   "pos": [
+    -1.58939,
+    0.79098,
+    0.39425
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 6.001",
+   "type": "MESH",
+   "center": [
+    -1.59897,
+    0.78681,
+    0.37055
+   ],
+   "top": 0.79132,
+   "size": [
+    0.03014,
+    0.03014,
+    0.00903
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 6.001",
+   "type": "FONT",
+   "center": [
+    -1.59775,
+    0.79098,
+    0.37012
+   ],
+   "top": 0.79098,
+   "size": [
+    0.00264,
+    0.00217,
+    0.0
+   ],
+   "text": "6",
+   "pos": [
+    -1.5977,
+    0.79098,
+    0.37012
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 1.001",
+   "type": "MESH",
+   "center": [
+    -1.5582,
+    0.78659,
+    0.41051
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 1.001",
+   "type": "FONT",
+   "center": [
+    -1.557,
+    0.79115,
+    0.41007
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00249,
+    0.00195,
+    0.0
+   ],
+   "text": "1",
+   "pos": [
+    -1.55694,
+    0.79115,
+    0.41008
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 2.001",
+   "type": "MESH",
+   "center": [
+    -1.56652,
+    0.78659,
+    0.38638
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 2.001",
+   "type": "FONT",
+   "center": [
+    -1.56531,
+    0.79115,
+    0.386
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00256,
+    0.00204,
+    0.0
+   ],
+   "text": "2",
+   "pos": [
+    -1.56525,
+    0.79115,
+    0.38594
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 3.001",
+   "type": "MESH",
+   "center": [
+    -1.57483,
+    0.78659,
+    0.36224
+   ],
+   "top": 0.79186,
+   "size": [
+    0.03017,
+    0.03018,
+    0.01054
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 3.001",
+   "type": "FONT",
+   "center": [
+    -1.57361,
+    0.79115,
+    0.36183
+   ],
+   "top": 0.79115,
+   "size": [
+    0.00262,
+    0.0021,
+    0.0
+   ],
+   "text": "3",
+   "pos": [
+    -1.57356,
+    0.79115,
+    0.36181
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key Enter.001",
+   "type": "MESH",
+   "center": [
+    -1.57107,
+    0.78611,
+    0.33395
+   ],
+   "top": 0.79138,
+   "size": [
+    0.05431,
+    0.03849,
+    0.01055
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend Enter.001",
+   "type": "FONT",
+   "center": [
+    -1.56986,
+    0.79066,
+    0.33342
+   ],
+   "top": 0.79066,
+   "size": [
+    0.00342,
+    0.00595,
+    0.0
+   ],
+   "text": "Enter",
+   "pos": [
+    -1.56981,
+    0.79066,
+    0.33351
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key 0.001",
+   "type": "MESH",
+   "center": [
+    -1.53822,
+    0.78636,
+    0.39013
+   ],
+   "top": 0.79238,
+   "size": [
+    0.03851,
+    0.05434,
+    0.01204
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend 0.001",
+   "type": "FONT",
+   "center": [
+    -1.53701,
+    0.79131,
+    0.38972
+   ],
+   "top": 0.79131,
+   "size": [
+    0.00264,
+    0.00217,
+    0.0
+   ],
+   "text": "0",
+   "pos": [
+    -1.53696,
+    0.79131,
+    0.3897
+   ]
+  },
+  {
+   "name": "PROP_keyboard sculpted key ..001",
+   "type": "MESH",
+   "center": [
+    -1.55069,
+    0.78635,
+    0.35393
+   ],
+   "top": 0.79235,
+   "size": [
+    0.03019,
+    0.0302,
+    0.012
+   ]
+  },
+  {
+   "name": "PROP_keyboard legend ..001",
+   "type": "FONT",
+   "center": [
+    -1.54862,
+    0.79131,
+    0.35322
+   ],
+   "top": 0.79131,
+   "size": [
+    0.00045,
+    0.00041,
+    0.0
+   ],
+   "text": ".",
+   "pos": [
+    -1.54943,
+    0.79131,
+    0.3535
+   ]
+  },
+  {
+   "name": "PROP_keyboard status lens",
+   "type": "MESH",
+   "center": [
+    -1.67014,
+    0.78247,
+    0.42355
+   ],
+   "top": 0.78293,
+   "size": [
+    0.00273,
+    0.00273,
+    0.00091
+   ]
+  },
+  {
+   "name": "PROP_keyboard status lens.001",
+   "type": "MESH",
+   "center": [
+    -1.67756,
+    0.78247,
+    0.40201
+   ],
+   "top": 0.78293,
+   "size": [
+    0.00273,
+    0.00273,
+    0.00091
+   ]
+  },
+  {
+   "name": "PROP_keyboard status lens.002",
+   "type": "MESH",
+   "center": [
+    -1.68498,
+    0.78247,
+    0.38047
+   ],
+   "top": 0.78293,
+   "size": [
+    0.00273,
+    0.00273,
+    0.00091
+   ]
+  },
+  {
+   "name": "PROP_keyboard braided lead",
+   "type": "CURVE",
+   "center": [
+    -1.86747,
+    0.42638,
+    1.15421
+   ],
+   "top": 0.77434,
+   "size": [
+    0.6262,
+    0.3314,
+    0.69592
+   ]
+  }
+ ],
+ "keyboard": {
+  "origin": [
+   -1.52843,
+   0.7518,
+   0.61284
+  ],
+  "x": [
+   -0.32557,
+   0.0,
+   -0.94552
+  ],
+  "y": [
+   -0.94552,
+   0.0,
+   0.32557
+  ],
+  "z": [
+   0.0,
+   1.0,
+   -0.0
+  ]
+ },
+ "chair": {
+  "origin": [
+   -1.28301,
+   -0.012,
+   0.64152
+  ],
+  "x": [
+   0.43012,
+   0.0,
+   0.90277
+  ],
+  "y": [
+   0.90277,
+   0.0,
+   -0.43012
+  ],
+  "seat": {
+   "min": [
+    -1.61057,
+    0.426,
+    0.9676
+   ],
+   "max": [
+    -0.98253,
+    0.4831,
+    0.32834
+   ]
+  },
+  "back": {
+   "min": [
+    -1.20653,
+    0.47042,
+    0.77159
+   ],
+   "max": [
+    -0.7547,
+    1.03458,
+    0.20303
+   ]
+  },
+  "armL": {
+   "min": [
+    -1.53271,
+    0.67309,
+    0.47835
+   ],
+   "max": [
+    -1.27228,
+    0.69793,
+    0.2938
+   ]
+  },
+  "armR": {
+   "min": [
+    -1.29012,
+    0.67309,
+    0.98752
+   ],
+   "max": [
+    -1.02969,
+    0.69793,
+    0.80296
+   ]
+  },
+  "seatLocal": [
+   [
+    -0.2436,
+    0.2436
+   ],
+   [
+    -0.2468,
+    0.2168
+   ],
+   [
+    0.438,
+    0.4951
+   ]
+  ],
+  "backLocal": [
+   [
+    -0.2546,
+    0.2327
+   ],
+   [
+    0.2218,
+    0.4764
+   ],
+   [
+    0.513,
+    1.0065
+   ]
+  ],
+  "seatTopCentre": 0.4885,
+  "backProfileLocalY": [
+   [
+    0.5,
+    0.2277,
+    0.2525
+   ],
+   [
+    0.6,
+    0.2232,
+    0.2761
+   ],
+   [
+    0.7,
+    0.2433,
+    0.3518
+   ],
+   [
+    0.8,
+    0.3293,
+    0.4102
+   ],
+   [
+    0.9,
+    0.383,
+    0.4519
+   ],
+   [
+    1.0,
+    0.4287,
+    0.4764
+   ]
+  ]
+ },
+ "desk": [
+  {
+   "name": "DESK_25mm engineered core",
+   "min": [
+    -2.118,
+    0.725,
+    1.908
+   ],
+   "max": [
+    -1.372,
+    0.7493,
+    -1.208
+   ],
+   "minB": [
+    -2.118,
+    -1.908,
+    0.725
+   ],
+   "maxB": [
+    -1.372,
+    1.208,
+    0.749
+   ]
+  },
+  {
+   "name": "DESK_oak veneer leaf 0",
+   "min": [
+    -2.1179,
+    0.7493,
+    1.908
+   ],
+   "max": [
+    -1.8691,
+    0.75,
+    -1.208
+   ],
+   "minB": [
+    -2.118,
+    -1.908,
+    0.749
+   ],
+   "maxB": [
+    -1.869,
+    1.208,
+    0.75
+   ]
+  },
+  {
+   "name": "DESK_oak veneer leaf 1",
+   "min": [
+    -1.8689,
+    0.7493,
+    1.908
+   ],
+   "max": [
+    -1.6201,
+    0.75,
+    -1.208
+   ],
+   "minB": [
+    -1.869,
+    -1.908,
+    0.749
+   ],
+   "maxB": [
+    -1.62,
+    1.208,
+    0.75
+   ]
+  },
+  {
+   "name": "DESK_oak veneer leaf 2",
+   "min": [
+    -1.6199,
+    0.7493,
+    1.908
+   ],
+   "max": [
+    -1.3711,
+    0.75,
+    -1.208
+   ],
+   "minB": [
+    -1.62,
+    -1.908,
+    0.749
+   ],
+   "maxB": [
+    -1.371,
+    1.208,
+    0.75
+   ]
+  }
+ ],
+ "room": [
+  {
+   "name": "Floor slab",
+   "minB": [
+    -2.275,
+    -2.25,
+    -0.16
+   ],
+   "maxB": [
+    2.275,
+    2.25,
+    0.0
+   ]
+  },
+  {
+   "name": "Left wall",
+   "minB": [
+    2.215,
+    -2.05,
+    0.0
+   ],
+   "maxB": [
+    2.345,
+    2.25,
+    2.9
+   ]
+  },
+  {
+   "name": "Rear wall | bottom",
+   "minB": [
+    -2.275,
+    2.155,
+    0.0
+   ],
+   "maxB": [
+    2.275,
+    2.285,
+    0.92
+   ]
+  },
+  {
+   "name": "Rear wall | left",
+   "minB": [
+    -2.275,
+    2.155,
+    0.92
+   ],
+   "maxB": [
+    -1.105,
+    2.285,
+    2.9
+   ]
+  },
+  {
+   "name": "Rear wall | right",
+   "minB": [
+    1.445,
+    2.155,
+    0.92
+   ],
+   "maxB": [
+    2.275,
+    2.285,
+    2.9
+   ]
+  },
+  {
+   "name": "Rear wall | lintel",
+   "minB": [
+    -1.11,
+    2.155,
+    2.74
+   ],
+   "maxB": [
+    1.47,
+    2.285,
+    2.9
+   ]
+  },
+  {
+   "name": "ROOM_Baseboard_left",
+   "minB": [
+    2.189,
+    -2.045,
+    0.0
+   ],
+   "maxB": [
+    2.213,
+    2.245,
+    0.13
+   ]
+  },
+  {
+   "name": "ROOM_Baseboard_rear",
+   "minB": [
+    -2.275,
+    2.125,
+    0.0
+   ],
+   "maxB": [
+    2.275,
+    2.152,
+    0.13
+   ]
+  },
+  {
+   "name": "REAL_RUG_flexible_woven_base",
+   "minB": [
+    -1.081,
+    -2.002,
+    0.004
+   ],
+   "maxB": [
+    1.521,
+    0.701,
+    0.013
+   ]
+  },
+  {
+   "name": "REAL_RUG_submillimeter_wool_fiber_tips",
+   "minB": [
+    -1.073,
+    -1.99,
+    0.011
+   ],
+   "maxB": [
+    1.512,
+    0.69,
+    0.015
+   ]
+  }
+ ],
+ "lights": {
+  "Soft cool key": {
+   "position": [
+    1.8,
+    5.8,
+    3.5
+   ],
+   "color": [
+    0.6000000238418579,
+    0.5799999833106995,
+    1.0
+   ],
+   "energy": 59.400001525878906
+  },
+  "Window blue fill": {
+   "position": [
+    0.1,
+    2.5,
+    -1.85
+   ],
+   "color": [
+    0.5299999713897705,
+    0.5799999833106995,
+    1.0
+   ],
+   "energy": 106.5999984741211
+  },
+  "CRT green spill": {
+   "position": [
+    -1.56293,
+    1.02,
+    0.56394
+   ],
+   "color": [
+    0.7200000286102295,
+    1.0,
+    0.8600000143051147
+   ],
+   "energy": 18.0
+  },
+  "Warm room fill": {
+   "position": [
+    -1.0,
+    3.5,
+    1.0
+   ],
+   "color": [
+    1.0,
+    0.8199999928474426,
+    0.6700000166893005
+   ],
+   "energy": 0.0
+  },
+  "ROOM_Lamp_warm_bulb": {
+   "position": [
+    0.36,
+    1.0315,
+    -1.85
+   ],
+   "color": [
+    1.0,
+    0.6299999952316284,
+    0.3799999952316284
+   ],
+   "energy": 1.2000000476837158
+  },
+  "REAL room soft front fill": {
+   "position": [
+    0.3,
+    2.1,
+    2.8
+   ],
+   "color": [
+    0.6000000238418579,
+    0.5799999833106995,
+    1.0
+   ],
+   "energy": 36.45000076293945
+  },
+  "REAL window diffuse night": {
+   "position": [
+    0.1,
+    2.0,
+    -2.45
+   ],
+   "color": [
+    0.5299999713897705,
+    0.5799999833106995,
+    1.0
+   ],
+   "energy": 36.400001525878906
+  },
+  "REAL warm practical bounce": {
+   "position": [
+    -0.65,
+    1.35,
+    -1.45
+   ],
+   "color": [
+    1.0,
+    0.6299999952316284,
+    0.3799999952316284
+   ],
+   "energy": 1.600000023841858
+  },
+  "REAL ceiling broad bounce": {
+   "position": [
+    -0.7,
+    2.6,
+    -0.2
+   ],
+   "color": [
+    0.6000000238418579,
+    0.5799999833106995,
+    1.0
+   ],
+   "energy": 10.800000190734863
+  },
+  "REAL room soft front fill restrained glass highlight": {
+   "position": [
+    0.3,
+    2.1,
+    2.8
+   ],
+   "color": [
+    0.5600000023841858,
+    0.6299999952316284,
+    1.0
+   ],
+   "energy": 0.07999999821186066
+  },
+  "REAL ceiling broad bounce restrained glass highlight": {
+   "position": [
+    -0.7,
+    2.6,
+    -0.2
+   ],
+   "color": [
+    0.5600000023841858,
+    0.6299999952316284,
+    1.0
+   ],
+   "energy": 0.11999999731779099
+  }
+ },
+ "hotspots": {
+  "lamp": {
+   "min": [
+    0.255,
+    0.01553,
+    -1.745
+   ],
+   "max": [
+    0.50272,
+    1.123,
+    -2.10278
+   ],
+   "count": 12
+  },
+  "crt": {
+   "min": [
+    -1.80158,
+    0.82245,
+    0.7071
+   ],
+   "max": [
+    -1.43915,
+    1.21558,
+    0.31734
+   ],
+   "count": 1
+  },
+  "screen": {
+   "min": [
+    -1.73976,
+    0.90116,
+    0.6564
+   ],
+   "max": [
+    -1.48758,
+    1.16552,
+    0.3801
+   ],
+   "count": 1
+  },
+  "penguin": {
+   "min": [
+    -1.79765,
+    0.772,
+    0.55768
+   ],
+   "max": [
+    -1.463,
+    1.31869,
+    -0.08478
+   ],
+   "count": 193
+  },
+  "windowL": {
+   "min": [
+    -1.067,
+    1.0105,
+    -2.201
+   ],
+   "max": [
+    0.149,
+    2.7055,
+    -2.205
+   ],
+   "count": 1
+  },
+  "windowR": {
+   "min": [
+    0.211,
+    1.0105,
+    -2.201
+   ],
+   "max": [
+    1.417,
+    2.7055,
+    -2.205
+   ],
+   "count": 1
+  }
+ },
+ "nameHints": [
+  "CLUT_ACC_mug printed beak",
+  "CLUT_ACC_mug printed dark pupil",
+  "CLUT_ACC_mug printed dark pupil.001",
+  "CLUT_ACC_mug printed ivory belly",
+  "CLUT_ACC_mug printed penguin silhouette",
+  "CLUT_ACC_mug printed white eye",
+  "CLUT_ACC_mug printed white eye.001",
+  "CLUT_ACC_penguin 0 assembled plush",
+  "CLUT_ACC_penguin 1 assembled plush",
+  "CLUT_ACC_penguin0 back joining seam",
+  "CLUT_ACC_penguin0 belly seam stitch",
+  "CLUT_ACC_penguin0 belly seam stitch.001",
+  "CLUT_ACC_penguin0 belly seam stitch.002",
+  "CLUT_ACC_penguin0 belly seam stitch.003",
+  "CLUT_ACC_penguin0 belly seam stitch.004",
+  "CLUT_ACC_penguin0 belly seam stitch.005",
+  "CLUT_ACC_penguin0 belly seam stitch.006",
+  "CLUT_ACC_penguin0 belly seam stitch.007",
+  "CLUT_ACC_penguin0 belly seam stitch.008",
+  "CLUT_ACC_penguin0 belly seam stitch.009",
+  "CLUT_ACC_penguin0 belly seam stitch.010",
+  "CLUT_ACC_penguin0 belly seam stitch.011",
+  "CLUT_ACC_penguin0 belly seam stitch.012",
+  "CLUT_ACC_penguin0 belly seam stitch.013",
+  "CLUT_ACC_penguin0 belly seam stitch.014",
+  "CLUT_ACC_penguin0 belly seam stitch.015",
+  "CLUT_ACC_penguin0 belly seam stitch.016",
+  "CLUT_ACC_penguin0 belly seam stitch.017",
+  "CLUT_ACC_penguin0 belly seam stitch.018",
+  "CLUT_ACC_penguin0 belly seam stitch.019",
+  "CLUT_ACC_penguin0 belly seam stitch.020",
+  "CLUT_ACC_penguin0 belly seam stitch.021",
+  "CLUT_ACC_penguin0 belly seam stitch.022",
+  "CLUT_ACC_penguin0 belly seam stitch.023",
+  "CLUT_ACC_penguin0 belly seam stitch.024",
+  "CLUT_ACC_penguin0 belly seam stitch.025",
+  "CLUT_ACC_penguin0 belly seam stitch.026",
+  "CLUT_ACC_penguin0 belly seam stitch.027",
+  "CLUT_ACC_penguin0 belly seam stitch.028",
+  "CLUT_ACC_penguin0 belly seam stitch.029",
+  "CLUT_ACC_penguin0 belly seam stitch.030",
+  "CLUT_ACC_penguin0 belly seam stitch.031",
+  "CLUT_ACC_penguin0 belly seam stitch.032",
+  "CLUT_ACC_penguin0 belly seam stitch.033",
+  "CLUT_ACC_penguin0 belly seam stitch.034",
+  "CLUT_ACC_penguin0 belly seam stitch.035",
+  "CLUT_ACC_penguin0 belly seam stitch.036",
+  "CLUT_ACC_penguin0 belly seam stitch.037",
+  "CLUT_ACC_penguin0 belly seam stitch.038",
+  "CLUT_ACC_penguin0 belly seam stitch.039",
+  "CLUT_ACC_penguin0 belly seam stitch.040",
+  "CLUT_ACC_penguin0 belly seam stitch.041",
+  "CLUT_ACC_penguin0 belly seam stitch.042",
+  "CLUT_ACC_penguin0 belly seam stitch.043",
+  "CLUT_ACC_penguin0 belly seam stitch.044",
+  "CLUT_ACC_penguin0 belly seam stitch.045",
+  "CLUT_ACC_penguin0 belly seam stitch.046",
+  "CLUT_ACC_penguin0 belly seam stitch.047",
+  "CLUT_ACC_penguin0 belly seam stitch.048",
+  "CLUT_ACC_penguin0 belly seam stitch.049",
+  "CLUT_ACC_penguin0 belly seam stitch.050",
+  "CLUT_ACC_penguin0 belly seam stitch.051",
+  "CLUT_ACC_penguin0 belly seam stitch.052",
+  "CLUT_ACC_penguin0 belly seam stitch.053",
+  "CLUT_ACC_penguin0 belly seam stitch.054",
+  "CLUT_ACC_penguin0 belly seam stitch.055",
+  "CLUT_ACC_penguin0 belly seam stitch.056",
+  "CLUT_ACC_penguin0 belly seam stitch.057",
+  "CLUT_ACC_penguin0 belly welt",
+  "CLUT_ACC_penguin0 cloth care tag",
+  "CLUT_ACC_penguin0 compressed fabric foot",
+  "CLUT_ACC_penguin0 compressed fabric foot.001",
+  "CLUT_ACC_penguin0 eye embroidery",
+  "CLUT_ACC_penguin0 eye embroidery.001",
+  "CLUT_ACC_penguin0 eye embroidery.002",
+  "CLUT_ACC_penguin0 eye embroidery.003",
+  "CLUT_ACC_penguin0 eye embroidery.004",
+  "CLUT_ACC_penguin0 eye embroidery.005",
+  "CLUT_ACC_penguin0 eye embroidery.006",
+  "CLUT_ACC_penguin0 eye embroidery.007"
+ ],
+ "layout": {
+  "kbScale": 1.34,
+  "kbSide": 0.165,
+  "kbAway": 0.0,
+  "kbYaw": 0.0,
+  "mouseShift": 0.08,
+  "chairFwd": 0.0,
+  "chairSide": 0.0,
+  "chairYaw": 0.0
+ },
+ "kbAnchor": [
+  -1.39236,
+  0.75635,
+  0.7405
+ ],
+ "kbSide0": [
+  -0.32557,
+  0.0,
+  -0.94552
+ ],
+ "kbAway0": [
+  -0.94552,
+  0.0,
+  0.32557
+ ],
+ "chairOrigin0": [
+  -1.28301,
+  -0.012,
+  0.64152
+ ],
+ "chairFwd0": [
+  -0.90277,
+  -0.0,
+  0.43012
+ ],
+ "chairLeft0": [
+  0.43012,
+  0.0,
+  0.90277
+ ],
+ "chairX0": [
+  0.43012,
+  0.0,
+  0.90277
+ ],
+ "chairY0": [
+  0.90277,
+  0.0,
+  -0.43012
+ ],
+ "can": {
+  "base": [
+   -1.73,
+   0.80716,
+   1.0
+  ],
+  "yaw": -0.5,
+  "bottom": 0.80716,
+  "top": 0.93843
+ }
+}
